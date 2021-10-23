@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    {% block style %}
+    {% endblock %}
+    <title>{% block title %} Tip & Go {% endblock %}</title>
+</head>
+
+
+<body>
+<div class="wrapper">
+{% block header %}
+    <header class="header">
+        <div class="logo">
+            <div class="tip_go">Tip & Go</div>
+            <div class="sub">as simple as profitable</div>
+        </div>
+        <div class="buttons">
+            <div class="btn1">
+                <a class='log_in' href='{% url "login" %}'>Log in</a>
+            </div>
+            <div class="btn2">
+                <a class="register" href='{% url "registration" %}'>Register</a>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+    <ul class="messages"></ul>
+    {% for message in messages %}
+        <li id="messages"> {{message}} </li>
+    {% endfor %}
+
+{% block footer %}
+<footer class="footer">
+    <h3 class='contact'><a class='contact_link' href='#'>Contacts</a></h3>
+    <h3 class="contact"><a class='contact_link' href='#'>Contex</a></h3>
+    <h3 class="contact"><a class='contact_link' href='#'>Condoms</a></h3>
+</footer>
+{% endblock %}
+
+</div>
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</html>

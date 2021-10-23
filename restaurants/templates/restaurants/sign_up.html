@@ -1,0 +1,34 @@
+{% extends 'restaurants/base.html' %}
+
+{% block style %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style_sign_up.css' %}" type="text/css">
+{% endblock %}
+
+
+{% block content %}
+    <section class='section'>
+        <!-- <div class="text_container"> -->
+        <h3 class='leave'>Leave your contacts.<br>
+            We will confirm your application soon.</h3>
+        <!-- </div> -->
+        <form action="" method="POST">
+            <div class="fields">
+                {% csrf_token %}
+                <div class="input-field">
+                    {{form.first_name}}
+                    {{form.last_name}}
+                </div>
+                <div class="full">
+                    {{form.phone}}
+                    {{form.email}}
+                    {{form.country}}
+                    {{form.business_desc}}
+                    <input type="submit" value="Send" class='send'>
+                </div>
+            </div>
+        </form>
+    </section>
+
+{% endblock %}
+

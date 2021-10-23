@@ -1,0 +1,250 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: #474B4F;
+}    
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 27%;
+    background-color: #222629;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+
+    margin-left: 50px;
+    height: 75px;
+    width: 350px;
+    /* background-color: rgb(129, 129, 129); */
+}
+
+.tip_go {
+    display: flex;
+    color: #86C232;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 55px;
+    text-shadow: 0px 4px 4px #000000;
+    padding-bottom: 0px;
+}
+
+.sub {
+    display: flex;
+
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: #86C232;
+    text-shadow: 0px 4px 4px #000000;
+    padding-left: 80px;
+    line-height: 0.8;
+}
+
+.buttons {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: space-between ;
+    right: 70px;
+    height: 70px;
+    width: 128px;
+    position: absolute;
+}
+
+.btn1 {
+    display: flex;
+    margin: 0px;
+    height: 30px;
+}
+
+.btn2 {
+    display: flex;
+    margin: 0px;
+    height: 30px;
+}
+
+.log_in {
+    
+    display: inline-block;
+    position: absolute;
+    padding: 5px 15px;
+    color: #222629;
+    background-color: #6B6E70;
+    border: 0px;
+    border-radius: 30px;
+    font-weight: 400;
+
+    height: 30px;
+    width: 128px;
+
+    text-decoration: none;
+    text-align: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    user-select: none;
+    line-height: 1.5;
+    opacity: 1;
+}
+
+.log_in:hover {
+    background-color: #747779;
+    color: #222629;
+}
+
+.register {
+    display: inline-block;
+    position: absolute  ;
+    padding: 5px 15px;
+    color: #222629;
+    background-color: #6B6E70;
+    border: 0px;
+    border-radius: 30px;
+    font-weight: 400;
+
+    height: 30px;
+    width: 128px;
+
+    text-decoration: none;
+    text-align: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    user-select: none;
+    line-height: 1.5;
+    opacity: 1;    
+}
+
+.register:hover {
+    background-color: #747779;
+    color: #222629;
+}
+
+.section {
+    width: 100%;
+    background-color: #474B4F;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inscription{
+    display: block;
+    position: relative;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height:38px;
+    text-align: center;
+    color: #C0C0C0;
+}
+
+.fields {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 670px;
+    width: 670px;
+    height: 200px;
+    flex-direction: row;
+}
+
+.send:hover {
+    background-color: #72c004;
+}
+
+.field {
+    border-radius: 19px;
+    background-color: #6B6E70;
+    color: #C0C0C0;
+    width: 670px;
+    text-align: center;
+    height: 30px;
+    margin-top: 9px;
+}
+
+.short {
+    width: 326px;
+}
+
+.first {
+    margin-right: 9px;
+}
+
+.last {
+    margin-left: 9px;
+}
+
+.password {
+    margin-right: 9px;
+}
+
+.confirm {
+    margin-left: 9px;
+}
+
+.send {
+    background-color: #86C232;
+    color: #222629;
+}
+
+.footer {
+    background-color: #222629;
+    color: #fff;
+    height: 8%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact {
+    display: block;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    padding: 0px 0px;
+    margin: 0px 0px;
+    color: #C0C0C0;
+}
+
+.contact_link {
+    text-decoration: none;
+    color: #C0C0C0
+}
+
+.contact_link:hover {
+    color:#C0C0C0;
+}
+
+input::-webkit-input-placeholder { color: #999595}  

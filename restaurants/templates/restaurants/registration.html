@@ -1,0 +1,65 @@
+{% extends 'restaurants/base.html' %}
+
+{% block style %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style_registration.css' %}" type="text/css">
+{% endblock %}
+
+{% block content %}
+<!--            <form method="POST" action="">-->
+<!--                {% csrf_token %}-->
+<!--                <div class="note">-->
+<!--                    <p>Registration</p>-->
+<!--                </div>-->
+
+<!--                <div class="form-content">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-md-6">-->
+<!--                            <div class="form-group">-->
+<!--                                <p>phone number *</p>-->
+<!--                                {{form.phone}}-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <p>E-mail *</p>-->
+<!--                                {{form.email}}-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <p>First name *</p>-->
+<!--                                {{form.first_name}}-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-6">-->
+<!--                            <div class="form-group">-->
+<!--                                <p>Last name *</p>-->
+<!--                                {{form.last_name}}-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <p>Password *</p>-->
+<!--                                {{form.password1}}-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <p>Confirm password *</p>-->
+<!--                                {{form.password2}}-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <button type="submit" class="btnSubmit">Submit</button>-->
+<!--                </div>-->
+<!--            </form>-->
+
+<section class="section">
+    <h3 class='inscription'>Registration</h3>
+    <form action="" method="POST">
+        <div class="fields">
+            {% csrf_token %}
+            {{form.first_name}}
+            {{form.last_name}}
+            {{form.phone}}
+            {{form.email}}
+            {{form.password1}}
+            {{form.password2}}
+            <input type="submit" value="Send" class='field send'>
+        </div>
+    </form>
+</section>
+{% endblock %}
